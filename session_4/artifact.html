@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AI Fluency Roadmap — Corporate Training | Approachable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6F1;
+    --bg-2:#ECEEE6;
+    --panel:#FFFFFF;
+    --ink:#14171A;
+    --ink-soft:#4B5560;
+    --ink-faint:#8A93A0;
+    --blue:#2454FF;
+    --blue-deep:#173BB0;
+    --lime:#C7DE3D;
+    --lime-deep:#8FA324;
+    --line:#DEE1D8;
+    --line-strong:#C7CBBF;
+    --radius:4px;
+    --display:'Archivo Black', sans-serif;
+    --body:'Work Sans', -apple-system, sans-serif;
+    --mono:'Space Mono', monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 32px;}
+  @media(max-width:640px){.wrap{padding:0 20px;}}
+
+  .nav{position:sticky;top:0;z-index:50;background:rgba(245,246,241,0.92);backdrop-filter:blur(8px);border-bottom:2px solid var(--ink);}
+  .nav-inner{max-width:1100px;margin:0 auto;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;}
+  @media(max-width:640px){.nav-inner{padding:14px 20px;}}
+  .brand{font-family:var(--mono);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:0.04em;text-decoration:none;}
+  .nav-cta{font-family:var(--mono);font-size:12px;font-weight:700;text-transform:uppercase;color:var(--bg);background:var(--ink);text-decoration:none;padding:10px 16px;}
+  .nav-cta:hover{background:var(--blue);}
+
+  .hero{padding:72px 0 56px;}
+  @media(max-width:640px){.hero{padding:48px 0 36px;}}
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--blue);margin-bottom:20px;background:#E8ECFF;display:inline-block;padding:6px 12px;
+  }
+  h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,6vw,64px);line-height:1.0;letter-spacing:-0.01em;text-transform:uppercase;max-width:15ch;margin-bottom:24px;}
+  h1 .hl{background:linear-gradient(transparent 62%, var(--lime) 62%);}
+  .lede{font-size:19px;color:var(--ink-soft);max-width:54ch;margin-bottom:36px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:52px;}
+  .btn-primary{font-family:var(--body);font-weight:700;font-size:15px;background:var(--ink);color:var(--bg);padding:15px 26px;border-radius:var(--radius);text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:background .15s ease;}
+  .btn-primary:hover{background:var(--blue);}
+  .btn-ghost{font-family:var(--body);font-weight:700;font-size:15px;color:var(--ink);border:2px solid var(--ink);padding:13px 26px;border-radius:var(--radius);text-decoration:none;}
+
+  .stat-strip{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);}
+  @media(max-width:640px){.stat-strip{grid-template-columns:1fr;}}
+  .stat{padding:20px 20px 0 0;border-right:1px solid var(--line-strong);}
+  .stat:last-child{border-right:none;}
+  @media(max-width:640px){.stat{border-right:none;border-bottom:1px solid var(--line-strong);padding-bottom:16px;}}
+  .stat-num{font-family:var(--display);font-size:30px;color:var(--blue);}
+  .stat-label{font-size:13px;color:var(--ink-soft);margin-top:6px;max-width:26ch;}
+
+  section{padding:88px 0;border-top:1px solid var(--line);}
+  @media(max-width:640px){section{padding:52px 0;}}
+  .sec-head{margin-bottom:48px;max-width:70ch;}
+  .sec-tag{font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;}
+  h2{font-family:var(--display);font-weight:400;font-size:clamp(26px,3.6vw,38px);text-transform:uppercase;letter-spacing:-0.005em;}
+  .sec-sub{color:var(--ink-soft);font-size:16px;margin-top:16px;max-width:60ch;}
+
+  /* ---------- ROADMAP (signature) ---------- */
+  .roadmap{position:relative;}
+  .roadmap-track{display:flex;gap:0;overflow-x:auto;padding-bottom:16px;scrollbar-width:thin;}
+  .road-line{position:relative;height:2px;background:var(--line-strong);margin:0 0 44px;}
+  .road-line::after{content:"";position:absolute;left:0;top:-1px;height:4px;width:100%;background:repeating-linear-gradient(90deg, var(--ink) 0 10px, transparent 10px 20px);}
+  .stops{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  @media(max-width:820px){.stops{grid-template-columns:1fr 1fr;}}
+  @media(max-width:520px){.stops{grid-template-columns:1fr;}}
+  .stop{background:var(--panel);border:2px solid var(--ink);padding:22px;position:relative;}
+  .stop::before{
+    content:"";position:absolute;top:-30px;left:22px;width:14px;height:14px;border-radius:50%;
+    background:var(--lime);border:2px solid var(--ink);
+  }
+  @media(max-width:820px){.stop::before{display:none;}}
+  .stop-tag{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--ink-faint);text-transform:uppercase;margin-bottom:8px;}
+  .stop-week{font-family:var(--display);font-size:26px;margin-bottom:10px;}
+  .stop-title{font-weight:700;font-size:15.5px;margin-bottom:10px;}
+  .stop-desc{font-size:13.5px;color:var(--ink-soft);margin-bottom:14px;}
+  .stop-tiers{display:flex;gap:6px;flex-wrap:wrap;}
+  .tier-tag{font-family:var(--mono);font-size:10px;font-weight:700;text-transform:uppercase;background:var(--bg-2);border:1px solid var(--line-strong);padding:4px 8px;}
+
+  /* ---------- WHY NOW ---------- */
+  .why-list{list-style:none;border-top:1px solid var(--line);}
+  .why-list li{display:grid;grid-template-columns:70px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start;}
+  .why-tag{font-family:var(--mono);font-size:12px;color:var(--blue);font-weight:700;}
+  .why-list p{font-size:15px;color:var(--ink-soft);}
+  .why-list strong{color:var(--ink);}
+
+  /* ---------- AUDIENCE / FIELD NOTES ---------- */
+  .notes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  @media(max-width:900px){.notes-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:520px){.notes-grid{grid-template-columns:1fr;}}
+  .note-card{background:var(--panel);border:1px dashed var(--line-strong);padding:22px;}
+  .note-head{font-family:var(--mono);font-size:11px;font-weight:700;text-transform:uppercase;color:var(--blue);margin-bottom:8px;}
+  .note-title{font-family:var(--display);font-size:17px;margin-bottom:10px;}
+  .note-desc{font-size:13.5px;color:var(--ink-soft);margin-bottom:14px;}
+  .note-list{list-style:none;font-size:12.5px;color:var(--ink);}
+  .note-list li{padding-left:14px;position:relative;margin-bottom:6px;}
+  .note-list li::before{content:"→";position:absolute;left:0;color:var(--blue);}
+
+  /* ---------- HANDS-ON BANNER ---------- */
+  .banner{background:var(--ink);color:var(--bg);padding:44px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
+  .banner-title{font-family:var(--display);font-size:clamp(22px,3vw,30px);text-transform:uppercase;max-width:20ch;}
+  .banner-title span{color:var(--lime);}
+  .banner p{color:#B8BEC9;font-size:14.5px;max-width:40ch;}
+
+  /* ---------- MENTOR ---------- */
+  .mentor-grid{display:grid;grid-template-columns:190px 1fr;gap:40px;align-items:start;}
+  @media(max-width:680px){.mentor-grid{grid-template-columns:1fr;}}
+  .mentor-photo{width:100%;aspect-ratio:1;object-fit:cover;border:2px solid var(--ink);}
+  .mentor-name{font-family:var(--display);font-size:22px;margin-bottom:6px;}
+  .mentor-role{font-family:var(--mono);font-size:12px;color:var(--blue);margin-bottom:16px;font-weight:700;text-transform:uppercase;}
+  .mentor-bio{color:var(--ink-soft);font-size:15px;max-width:60ch;margin-bottom:22px;}
+  .mentor-stats{display:flex;gap:28px;flex-wrap:wrap;}
+  .mentor-stats div{border-left:3px solid var(--lime);padding-left:12px;}
+  .mentor-stats b{font-family:var(--display);font-size:22px;display:block;}
+  .mentor-stats span{font-size:12px;color:var(--ink-faint);}
+  .logos{margin-top:30px;padding-top:24px;border-top:1px solid var(--line);}
+  .logos-label{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:14px;}
+  .logos-list{display:flex;flex-wrap:wrap;gap:12px 24px;font-family:var(--display);font-size:15px;color:var(--ink-soft);}
+
+  /* ---------- PRICING ---------- */
+  .price-card{background:var(--panel);border:2px solid var(--ink);padding:40px;}
+  .price-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;border-bottom:2px dashed var(--line-strong);padding-bottom:26px;margin-bottom:26px;}
+  .price-figure{font-family:var(--display);font-size:48px;}
+  .price-figure span{font-size:16px;color:var(--ink-faint);font-family:var(--body);font-weight:500;}
+  .price-note{font-size:13px;color:var(--ink-faint);margin-top:8px;max-width:32ch;}
+  .includes{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px;}
+  @media(max-width:560px){.includes{grid-template-columns:1fr;}}
+  .includes li{list-style:none;font-size:14px;color:var(--ink-soft);padding-left:22px;position:relative;}
+  .includes li::before{content:"✓";position:absolute;left:0;color:var(--lime-deep);font-weight:700;}
+
+  /* ---------- PROCESS ---------- */
+  .process-row{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--ink);}
+  @media(max-width:800px){.process-row{grid-template-columns:1fr 1fr;}}
+  @media(max-width:480px){.process-row{grid-template-columns:1fr;}}
+  .proc-card{background:var(--panel);padding:24px;}
+  .proc-num{font-family:var(--display);font-size:22px;color:var(--blue);margin-bottom:10px;}
+  .proc-title{font-weight:700;font-size:15px;margin-bottom:8px;}
+  .proc-desc{font-size:13px;color:var(--ink-soft);}
+
+  /* ---------- FAQ ---------- */
+  .faq-item{border-top:1px solid var(--line);padding:20px 0;}
+  .faq-item:last-child{border-bottom:1px solid var(--line);}
+  .faq-q{font-weight:700;font-size:15.5px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;}
+  .faq-q::after{content:"+";font-family:var(--display);font-size:20px;color:var(--blue);transition:transform .2s ease;}
+  .faq-item.open .faq-q::after{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;font-size:14px;color:var(--ink-soft);}
+  .faq-item.open .faq-a{max-height:200px;padding-top:12px;}
+
+  .footer-cta{background:var(--ink);color:var(--bg);padding:88px 0;text-align:center;}
+  .footer-cta .sec-tag{color:var(--lime);}
+  .footer-cta h2{margin:0 auto 18px;}
+  .footer-cta .sec-sub{color:#B8BEC9;margin:0 auto 32px;}
+  .footer-cta .btn-primary{background:var(--lime);color:var(--ink);}
+  .footer-cta .btn-primary:hover{background:#D8ED66;}
+  footer.site-footer{padding:28px 0;text-align:center;font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);}
+
+  .fade{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease;}
+  .fade.in{opacity:1;transform:none;}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">APPROACHABLE // CORPORATE</a>
+    <a class="nav-cta" href="#proposal">Request Proposal</a>
+  </div>
+</nav>
+
+<main id="top">
+  <div class="wrap hero">
+    <span class="eyebrow">Corporate AI Training Proposal</span>
+    <h1>A <span class="hl">field-tested</span> AI roadmap for your whole team</h1>
+    <p class="lede">Four live, hands-on weeks that take your organization from "we use AI sometimes" to a team that ships real work with it — with outcomes mapped to CxOs, Directors, Management, and Middle Managers.</p>
+    <div class="hero-ctas">
+      <a href="#proposal" class="btn-primary">Request This Proposal →</a>
+      <a href="#roadmap" class="btn-ghost">See the Roadmap</a>
+    </div>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-num">59%</div><div class="stat-label">of enterprise leaders report an AI skills gap in 2026, despite existing training spend</div></div>
+      <div class="stat"><div class="stat-num">85%</div><div class="stat-label">say the AI training they got didn't help them apply it on the job</div></div>
+      <div class="stat"><div class="stat-num">4</div><div class="stat-label">live weekly sessions — hands-on, not pre-recorded</div></div>
+    </div>
+  </div>
+
+  <section id="roadmap" class="roadmap">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-tag">The Roadmap</p>
+        <h2>Four stops. One live session each.</h2>
+        <p class="sec-sub">60–90 minutes, once a week, delivered live to your group — real work, not modules to click through alone.</p>
+      </div>
+      <div class="road-line"></div>
+      <div class="stops">
+        <div class="stop">
+          <div class="stop-tag">Stop</div>
+          <div class="stop-week">01</div>
+          <div class="stop-title">AI Foundations — Beyond the Hype</div>
+          <p class="stop-desc">A vendor-neutral map of today's AI landscape — what's genuinely new, and where hype outruns reality.</p>
+          <div class="stop-tiers"><span class="tier-tag">CxO</span><span class="tier-tag">Director</span></div>
+        </div>
+        <div class="stop">
+          <div class="stop-tag">Stop</div>
+          <div class="stop-week">02</div>
+          <div class="stop-title">Applied AI Workflows</div>
+          <p class="stop-desc">Prompt libraries and research-to-report pipelines, built live with your team's actual tasks.</p>
+          <div class="stop-tiers"><span class="tier-tag">Management</span><span class="tier-tag">Mid-Manager</span></div>
+        </div>
+        <div class="stop">
+          <div class="stop-tag">Stop</div>
+          <div class="stop-week">03</div>
+          <div class="stop-title">Agentic AI &amp; Delegation</div>
+          <p class="stop-desc">What an AI agent is, and delegation patterns that keep a human in the loop on judgment calls.</p>
+          <div class="stop-tiers"><span class="tier-tag">Director</span><span class="tier-tag">Management</span></div>
+        </div>
+        <div class="stop">
+          <div class="stop-tag">Stop</div>
+          <div class="stop-week">04</div>
+          <div class="stop-title">Building &amp; Shipping with AI</div>
+          <p class="stop-desc">A live build session — from idea to a working internal tool, plus a 90-day adoption roadmap.</p>
+          <div class="stop-tiers"><span class="tier-tag">All Tiers</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-tag">Why Now</p>
+        <h2>The gap isn't access. It's applied fluency.</h2>
+      </div>
+      <ul class="why-list">
+        <li><span class="why-tag">01</span><p><strong>Access isn't the bottleneck.</strong> Most organizations already have AI tools live across teams — the gap is judgment, not availability.</p></li>
+        <li><span class="why-tag">02</span><p><strong>Video courses don't transfer.</strong> Passive training leaves people aware of AI but unable to apply it to their actual role.</p></li>
+        <li><span class="why-tag">03</span><p><strong>One deck rarely serves four seats.</strong> A CxO and a middle manager need different framing — strategy and ROI vs. workflow-level fluency.</p></li>
+        <li><span class="why-tag">04</span><p><strong>This roadmap is built role-first.</strong> Same four weeks, same room — outcomes explicitly mapped to what each level of your org needs.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="audience">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-tag">Field Notes — Who This Is For</p>
+        <h2>Four tiers, four outcomes.</h2>
+      </div>
+      <div class="notes-grid">
+        <div class="note-card">
+          <div class="note-head">Tier 01</div>
+          <div class="note-title">CxO</div>
+          <p class="note-desc">Strategy &amp; ROI — where AI actually moves outcomes, and how to evaluate vendors without getting sold to.</p>
+          <ul class="note-list"><li>Capability audit</li><li>Governance &amp; risk</li><li>Budget priorities</li></ul>
+        </div>
+        <div class="note-card">
+          <div class="note-head">Tier 02</div>
+          <div class="note-title">Director</div>
+          <p class="note-desc">Team enablement — redesigning workflows without breaking quality or morale.</p>
+          <ul class="note-list"><li>Workflow redesign</li><li>Change management</li><li>Adoption metrics</li></ul>
+        </div>
+        <div class="note-card">
+          <div class="note-head">Tier 03</div>
+          <div class="note-title">Management</div>
+          <p class="note-desc">Operational fluency — delegating real work to AI agents and knowing when to trust the output.</p>
+          <ul class="note-list"><li>Delegation patterns</li><li>Team prompt library</li><li>Agent basics</li></ul>
+        </div>
+        <div class="note-card">
+          <div class="note-head">Tier 04</div>
+          <div class="note-title">Middle Manager</div>
+          <p class="note-desc">Hands-on mastery — building, automating, and shipping real work faster.</p>
+          <ul class="note-list"><li>Live build-alongs</li><li>Task automation</li><li>Finished project</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="handson" style="border-top:none;padding-top:0;">
+    <div class="wrap">
+      <div class="banner">
+        <div class="banner-title">Every session is <span>live</span>, not recorded.</div>
+        <p>No modules to click through alone. Each week is a real working session with your team, built around your actual tools and use cases.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mentor">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-tag">Who's Teaching</p>
+        <h2>Led by someone who's done this 250+ times.</h2>
+      </div>
+      <div class="mentor-grid">
+        <img class="mentor-photo" src="https://www.approachable.dev/_next/image?url=%2Fimg%2FRanbeer%20makin%20aug%2022.jpg&w=384&q=75" alt="Ranbeer Makin">
+        <div>
+          <div class="mentor-name">Ranbeer Makin</div>
+          <div class="mentor-role">Entrepreneur · AI Educator · Claude Certified &amp; Claude Partner</div>
+          <p class="mentor-bio">Full-time entrepreneur who has spent three years teaching AI to 250+ professionals from organizations including Adobe, Deloitte, Microsoft, Upwork, and early-stage startups. Runs every session as a small, discussion-driven working group — never a lecture.</p>
+          <div class="mentor-stats">
+            <div><b>250+</b><span>Trained</span></div>
+            <div><b>3 yrs</b><span>Teaching AI</span></div>
+            <div><b>4.9★</b><span>Rating</span></div>
+          </div>
+          <div class="logos">
+            <div class="logos-label">Alumni already trained from</div>
+            <div class="logos-list"><span>Adobe</span><span>Microsoft</span><span>Deloitte</span><span>Nordstrom</span><span>Upwork</span><span>Coca-Cola</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-tag">Investment</p>
+        <h2>Straightforward pricing, scoped to your group.</h2>
+      </div>
+      <div class="price-card">
+        <div class="price-top">
+          <div>
+            <div class="price-figure">₹3,000 <span>/ participant</span></div>
+            <p class="price-note">Covers the full four-week roadmap. Final quote confirmed after a short scoping call.</p>
+          </div>
+          <a href="#proposal" class="btn-primary">Request This Proposal →</a>
+        </div>
+        <ul class="includes">
+          <li>4 live, 60–90 min sessions</li>
+          <li>Role-tailored agenda across all tiers</li>
+          <li>Pre-session material each week</li>
+          <li>Session recordings for internal use</li>
+          <li>A working project per participant</li>
+          <li>90-day post-program adoption roadmap</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-tag">Next Steps</p>
+        <h2>What happens after you say yes.</h2>
+      </div>
+      <div class="process-row">
+        <div class="proc-card"><div class="proc-num">01</div><div class="proc-title">Scoping call</div><div class="proc-desc">30 minutes to understand your roles, use cases, and team size.</div></div>
+        <div class="proc-card"><div class="proc-num">02</div><div class="proc-title">Custom agenda</div><div class="proc-desc">We map each session's examples to your industry and existing tools.</div></div>
+        <div class="proc-card"><div class="proc-num">03</div><div class="proc-title">Four live sessions</div><div class="proc-desc">One per week, delivered directly to your team, virtual or on-site.</div></div>
+        <div class="proc-card"><div class="proc-num">04</div><div class="proc-title">Adoption roadmap</div><div class="proc-desc">A 90-day plan so the program keeps paying off after we leave.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-tag">Questions</p>
+        <h2>Anticipated questions.</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-q">Is this only about Claude?</div><div class="faq-a">No. Stop 1 covers the AI landscape broadly and stays vendor-neutral. We go deepest, hands-on, on the Claude ecosystem because it's where our practical expertise is strongest — but it's one part of a wider map.</div></div>
+        <div class="faq-item"><div class="faq-q">Can we split sessions by seniority instead of combining?</div><div class="faq-a">Yes — tiered tracks (e.g. a CxO-only session, a separate management track) are available for an adjusted quote. Most clients start combined and split later.</div></div>
+        <div class="faq-item"><div class="faq-q">Do participants need to code?</div><div class="faq-a">No. Everything is calibrated to your group's real technical comfort during the scoping call — non-technical leaders are the norm here, not the exception.</div></div>
+        <div class="faq-item"><div class="faq-q">How is this different from the public cohort?</div><div class="faq-a">The public cohort is a mixed-company group at a lower price point. This program is private to your organization, with examples and role-tier framing built specifically for your team.</div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="footer-cta" id="proposal">
+  <div class="wrap">
+    <p class="sec-tag">Ready When You Are</p>
+    <h2>Let's scope this for your team.</h2>
+    <p class="sec-sub">30 minutes is enough to size the group, confirm dates, and send a formal proposal.</p>
+    <a href="mailto:hello@approachable.dev?subject=Corporate%20AI%20Training%20Proposal" class="btn-primary">Request This Proposal →</a>
+  </div>
+</section>
+
+<footer class="site-footer">Approachable — delivered via BIGINT Solutions · www.bigintsolutions.com</footer>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    item.querySelector('.faq-q').addEventListener('click',()=>{ item.classList.toggle('open'); });
+  });
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:0.1});
+  document.querySelectorAll('section').forEach(s=>{ s.classList.add('fade'); io.observe(s); });
+</script>
+</body>
+</html>
