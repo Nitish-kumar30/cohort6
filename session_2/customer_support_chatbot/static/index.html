@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroBuds Pro — Help Center</title>
+  <style>
+    :root {
+      --ink: #14201b;
+      --muted: #5d6f67;
+      --line: #dce6e1;
+      --paper: #f4f7f5;
+      --white: #ffffff;
+      --green: #1f8a62;
+      --green-dark: #176b4c;
+      --bubble-bot: #eef4f1;
+      --bubble-user: #1f8a62;
+      --danger: #b42318;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    .top {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+    .logo {
+      width: 32px; height: 32px; border-radius: 9px;
+      background: var(--green); color: #fff;
+      display: grid; place-items: center; font-size: 13px;
+    }
+    .top nav { color: var(--muted); font-size: 14px; display: flex; gap: 18px; }
+
+    main { max-width: 860px; margin: 0 auto; padding: 48px 24px 120px; }
+    h1 { font-size: 32px; letter-spacing: -0.03em; margin-bottom: 8px; }
+    .lede { color: var(--muted); margin-bottom: 28px; max-width: 520px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .card h2 { font-size: 15px; margin-bottom: 6px; }
+    .card p { font-size: 13px; color: var(--muted); line-height: 1.45; }
+    .hint { margin-top: 28px; font-size: 14px; color: var(--muted); }
+
+    #launcher {
+      position: fixed; right: 22px; bottom: 22px;
+      width: 58px; height: 58px; border: 0; border-radius: 50%;
+      background: var(--green); color: #fff; cursor: pointer;
+      box-shadow: 0 10px 24px rgba(31, 138, 98, 0.35);
+      font-size: 22px;
+    }
+    #launcher .badge {
+      position: absolute; top: -2px; right: -2px;
+      width: 18px; height: 18px; border-radius: 50%;
+      background: #e24b4b; color: #fff; font-size: 11px;
+      display: grid; place-items: center; font-weight: 700;
+    }
+    #launcher.open { background: var(--green-dark); }
+
+    #widget {
+      position: fixed; right: 22px; bottom: 92px;
+      width: 360px; height: 520px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 50px rgba(20, 32, 27, 0.18);
+      display: none;
+      grid-template-rows: auto 1fr auto auto;
+      overflow: hidden;
+      z-index: 20;
+    }
+    #widget.show { display: grid; }
+
+    .w-head {
+      background: var(--green);
+      color: #fff;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .w-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: #176b4c; display: grid; place-items: center; font-weight: 700;
+    }
+    .w-head h3 { font-size: 14px; }
+    .w-head p { font-size: 11px; opacity: 0.9; }
+    .w-head p::before {
+      content: ""; display: inline-block; width: 7px; height: 7px;
+      background: #9ff0c6; border-radius: 50%; margin-right: 5px;
+    }
+    #close {
+      margin-left: auto; background: transparent; border: 0; color: #fff;
+      font-size: 20px; cursor: pointer; line-height: 1;
+    }
+
+    #log { overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 10px; background: #f7faf8; }
+    .row { display: flex; flex-direction: column; max-width: 82%; }
+    .row.bot { align-self: flex-start; }
+    .row.user { align-self: flex-end; align-items: flex-end; }
+    .bubble {
+      padding: 9px 11px; border-radius: 14px; font-size: 13.5px; line-height: 1.45;
+      white-space: pre-wrap;
+    }
+    .row.bot .bubble { background: var(--bubble-bot); border-bottom-left-radius: 4px; }
+    .row.user .bubble { background: var(--bubble-user); color: #fff; border-bottom-right-radius: 4px; }
+    .row.error .bubble { background: #fde8e6; color: var(--danger); }
+    .time { font-size: 10px; color: var(--muted); margin-top: 4px; }
+
+    .typing { display: flex; gap: 4px; padding: 10px 12px; }
+    .typing span {
+      width: 6px; height: 6px; border-radius: 50%; background: #8aa397;
+      animation: bounce 1s infinite;
+    }
+    .typing span:nth-child(2) { animation-delay: 0.15s; }
+    .typing span:nth-child(3) { animation-delay: 0.3s; }
+    @keyframes bounce {
+      0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+      40% { transform: translateY(-4px); opacity: 1; }
+    }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 12px 10px; background: #f7faf8; }
+    .chips button {
+      border: 1px solid var(--line); background: #fff; color: var(--ink);
+      border-radius: 999px; padding: 5px 9px; font-size: 11.5px; cursor: pointer;
+    }
+
+    form {
+      display: grid; grid-template-columns: 1fr auto; gap: 8px;
+      padding: 10px 12px 12px; border-top: 1px solid var(--line); background: #fff;
+    }
+    #input {
+      border: 1px solid var(--line); border-radius: 20px; padding: 9px 12px;
+      font: inherit; font-size: 13px;
+    }
+    #input:focus { outline: 1px solid var(--green); }
+    #send {
+      background: var(--green); color: #fff; border: 0; border-radius: 20px;
+      padding: 0 14px; font-weight: 700; cursor: pointer;
+    }
+    #send:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    @media (max-width: 800px) {
+      .cards { grid-template-columns: 1fr; }
+      #widget { width: calc(100vw - 24px); right: 12px; bottom: 84px; height: 70vh; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="logo">A</span> AeroBuds</div>
+    <nav><span>Shop</span><span>Support</span><span>Orders</span></nav>
+  </header>
+
+  <main>
+    <h1>Need help with AeroBuds Pro?</h1>
+    <p class="lede">Fit, pairing, returns, and warranty — our support agent Aero can answer the usual questions in a few seconds.</p>
+    <section class="cards">
+      <article class="card">
+        <h2>Fit and ear tips</h2>
+        <p>Tips falling out on walks, or bass dropping with a smaller size? Start with Fit Test in the app.</p>
+      </article>
+      <article class="card">
+        <h2>Bluetooth dropouts</h2>
+        <p>One side cutting out when you turn your head is usually firmware 2.1 or a re-pair, not a mystery setting.</p>
+      </article>
+      <article class="card">
+        <h2>Returns and warranty</h2>
+        <p>30-day returns with a prepaid label. Dead bud within 12 months: we cover shipping both ways.</p>
+      </article>
+    </section>
+    <p class="hint">Chat is in the corner — click the green bubble to talk to Aero.</p>
+  </main>
+
+  <div id="widget" aria-label="AeroBuds support chat">
+    <div class="w-head">
+      <div class="w-avatar">A</div>
+      <div>
+        <h3>AeroBuds Support</h3>
+        <p>Online · Aero usually replies instantly</p>
+      </div>
+      <button id="close" type="button" aria-label="Close chat">×</button>
+    </div>
+    <div id="log"></div>
+    <div class="chips" id="chips">
+      <button type="button" data-q="My medium tips fall out when I walk, and the small ones kill the bass.">Fit / tips</button>
+      <button type="button" data-q="The left bud cuts out whenever I turn my head.">Bluetooth drop</button>
+      <button type="button" data-q="One bud died in month four. Do I have to pay to ship it back?">Warranty shipping</button>
+      <button type="button" data-q="The case does not sit flat in my jeans pocket. Warranty?">Bulky case</button>
+      <button type="button" data-q="Can you send me a GST invoice for order AB-10422?">GST invoice</button>
+    </div>
+    <form id="form">
+      <input id="input" type="text" placeholder="Message Aero…" autocomplete="off" required>
+      <button id="send" type="submit">Send</button>
+    </form>
+  </div>
+
+  <button id="launcher" type="button" aria-label="Open support chat">
+    💬
+    <span class="badge" id="badge">1</span>
+  </button>
+
+  <script>
+    const widget = document.getElementById("widget");
+    const launcher = document.getElementById("launcher");
+    const log = document.getElementById("log");
+    const form = document.getElementById("form");
+    const input = document.getElementById("input");
+    const send = document.getElementById("send");
+    const messages = [];
+    let open = false;
+
+    function nowTime() {
+      return new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    }
+
+    function addRow(text, cls) {
+      const row = document.createElement("div");
+      row.className = "row " + cls;
+      const bubble = document.createElement("div");
+      bubble.className = "bubble";
+      bubble.textContent = text;
+      const time = document.createElement("div");
+      time.className = "time";
+      time.textContent = nowTime();
+      row.append(bubble, time);
+      log.appendChild(row);
+      log.scrollTop = log.scrollHeight;
+      return row;
+    }
+
+    function addTyping() {
+      const row = document.createElement("div");
+      row.className = "row bot";
+      row.innerHTML = '<div class="bubble typing"><span></span><span></span><span></span></div>';
+      log.appendChild(row);
+      log.scrollTop = log.scrollHeight;
+      return row;
+    }
+
+    addRow("Hi — Aero here with AeroBuds Pro support. What can I help with?", "bot");
+
+    function setOpen(next) {
+      open = next;
+      widget.classList.toggle("show", open);
+      launcher.classList.toggle("open", open);
+      launcher.replaceChildren(open ? "×" : "💬");
+      if (open) {
+        input.focus();
+      } else {
+        const b = document.createElement("span");
+        b.className = "badge";
+        b.id = "badge";
+        b.textContent = "1";
+        launcher.appendChild(b);
+      }
+    }
+
+    launcher.addEventListener("click", () => setOpen(!open));
+    document.getElementById("close").addEventListener("click", () => setOpen(false));
+
+    async function ask(text) {
+      const content = text.trim();
+      if (!content) return;
+      if (!open) setOpen(true);
+
+      messages.push({ role: "user", content });
+      addRow(content, "user");
+      input.value = "";
+      send.disabled = true;
+      const waiting = addTyping();
+
+      try {
+        const res = await fetch("/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ messages }),
+        });
+        const data = await res.json();
+        waiting.remove();
+        if (!res.ok || data.error) {
+          addRow(data.error || "Request failed.", "error");
+          messages.pop();
+          return;
+        }
+        messages.push({ role: "assistant", content: data.reply });
+        addRow(data.reply, "bot");
+      } catch (err) {
+        waiting.remove();
+        messages.pop();
+        addRow("Could not reach the local server. Is python app.py running?", "error");
+      } finally {
+        send.disabled = false;
+        input.focus();
+      }
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      ask(input.value);
+    });
+
+    document.getElementById("chips").addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-q]");
+      if (btn && !send.disabled) ask(btn.dataset.q);
+    });
+  </script>
+</body>
+</html>
