@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "product": "Aurora Wireless Earbuds",
+    "customer_name": "Priya S.",
+    "rating": 5,
+    "date": "2026-01-03",
+    "review_text": "These earbuds are amazing! Battery lasts all day and the noise cancellation actually works on my train commute. Best purchase this year."
+  },
+  {
+    "id": 2,
+    "product": "Aurora Wireless Earbuds",
+    "customer_name": "Mark T.",
+    "rating": 1,
+    "date": "2026-01-04",
+    "review_text": "Right earbud stopped charging after 10 days. Customer support has not replied to my emails in over a week. Very frustrating experience."
+  },
+  {
+    "id": 3,
+    "product": "Aurora Wireless Earbuds",
+    "customer_name": "Linh N.",
+    "rating": 3,
+    "date": "2026-01-05",
+    "review_text": "Sound quality is decent but the case feels cheap and the lid doesn't click shut properly. Works fine otherwise."
+  },
+  {
+    "id": 4,
+    "product": "BrewMaster Coffee Grinder",
+    "customer_name": "Carlos R.",
+    "rating": 5,
+    "date": "2026-01-06",
+    "review_text": "Consistent grind size every time, super quiet compared to my old grinder. My espresso shots have never tasted better."
+  },
+  {
+    "id": 5,
+    "product": "BrewMaster Coffee Grinder",
+    "customer_name": "Emma W.",
+    "rating": 2,
+    "date": "2026-01-06",
+    "review_text": "It's loud, louder than advertised, and it leaves a mess of grounds around the spout every single time. Considering returning it."
+  },
+  {
+    "id": 6,
+    "product": "BrewMaster Coffee Grinder",
+    "customer_name": "Sam O.",
+    "rating": 4,
+    "date": "2026-01-07",
+    "review_text": "Good value for the price. Takes a bit of getting used to the dial settings but grinds well once dialed in."
+  },
+  {
+    "id": 7,
+    "product": "NovaFit Smart Watch",
+    "customer_name": "Deepak K.",
+    "rating": 1,
+    "date": "2026-01-08",
+    "review_text": "The heart rate sensor gives wildly inaccurate readings during workouts, sometimes off by 40 bpm. Not usable for training at all."
+  },
+  {
+    "id": 8,
+    "product": "NovaFit Smart Watch",
+    "customer_name": "Rachel B.",
+    "rating": 5,
+    "date": "2026-01-08",
+    "review_text": "Love the sleep tracking and the battery easily lasts 5 days. App is intuitive and syncs instantly with my phone."
+  },
+  {
+    "id": 9,
+    "product": "NovaFit Smart Watch",
+    "customer_name": "Tomás G.",
+    "rating": 2,
+    "date": "2026-01-09",
+    "review_text": "Screen scratched after just two weeks of light use despite the so-called 'scratch resistant' glass. Disappointed."
+  },
+  {
+    "id": 10,
+    "product": "GreenLeaf Standing Desk",
+    "customer_name": "Hannah F.",
+    "rating": 5,
+    "date": "2026-01-10",
+    "review_text": "Sturdy, quiet motor, and the memory presets are a nice touch. Assembly took about 40 minutes and instructions were clear."
+  },
+  {
+    "id": 11,
+    "product": "GreenLeaf Standing Desk",
+    "customer_name": "Omar H.",
+    "rating": 1,
+    "date": "2026-01-11",
+    "review_text": "Desk arrived with a bent leg and a support bracket missing. Had to chase support for a replacement part for three weeks."
+  },
+  {
+    "id": 12,
+    "product": "GreenLeaf Standing Desk",
+    "customer_name": "Julia M.",
+    "rating": 4,
+    "date": "2026-01-11",
+    "review_text": "Does the job well, a little wobbly at full height but otherwise solid for the price point."
+  },
+  {
+    "id": 13,
+    "product": "PixelPro 4K Webcam",
+    "customer_name": "Wei C.",
+    "rating": 5,
+    "date": "2026-01-12",
+    "review_text": "Video quality is crisp even in low light, auto-focus is fast, and the built-in mic is surprisingly good for video calls."
+  },
+  {
+    "id": 14,
+    "product": "PixelPro 4K Webcam",
+    "customer_name": "Fatima A.",
+    "rating": 2,
+    "date": "2026-01-12",
+    "review_text": "Driver software keeps crashing on Windows, webcam disconnects randomly during meetings. Had to switch back to my old one."
+  },
+  {
+    "id": 15,
+    "product": "PixelPro 4K Webcam",
+    "customer_name": "Noah P.",
+    "rating": 3,
+    "date": "2026-01-13",
+    "review_text": "Picture is fine but the included clip mount barely holds onto my thicker monitor bezel. Wish it came with a better mount."
+  },
+  {
+    "id": 16,
+    "product": "TrailBlaze Hiking Backpack",
+    "customer_name": "Grace L.",
+    "rating": 5,
+    "date": "2026-01-14",
+    "review_text": "Took this on a 5-day trek, straps stayed comfortable the whole way and the rain cover saved my gear during a storm."
+  },
+  {
+    "id": 17,
+    "product": "TrailBlaze Hiking Backpack",
+    "customer_name": "Ivan D.",
+    "rating": 1,
+    "date": "2026-01-14",
+    "review_text": "Zipper broke on the main compartment within the first month. For this price I expected much better build quality."
+  },
+  {
+    "id": 18,
+    "product": "TrailBlaze Hiking Backpack",
+    "customer_name": "Aisha M.",
+    "rating": 4,
+    "date": "2026-01-15",
+    "review_text": "Spacious and well organized, though it runs a bit heavy empty compared to other packs I've owned."
+  },
+  {
+    "id": 19,
+    "product": "CloudNine Memory Foam Pillow",
+    "customer_name": "Ben S.",
+    "rating": 5,
+    "date": "2026-01-16",
+    "review_text": "Finally sleeping through the night without neck pain. Wish I had bought this years ago."
+  },
+  {
+    "id": 20,
+    "product": "CloudNine Memory Foam Pillow",
+    "customer_name": "Yuki T.",
+    "rating": 1,
+    "date": "2026-01-16",
+    "review_text": "Strong chemical smell straight out of the packaging that hasn't gone away after a week of airing it out. Returning this."
+  },
+  {
+    "id": 21,
+    "product": "CloudNine Memory Foam Pillow",
+    "customer_name": "Zainab Q.",
+    "rating": 3,
+    "date": "2026-01-17",
+    "review_text": "Comfortable enough but flattens out faster than I expected, might not hold up long term."
+  },
+  {
+    "id": 22,
+    "product": "VoltCharge Power Bank",
+    "customer_name": "Leo F.",
+    "rating": 5,
+    "date": "2026-01-18",
+    "review_text": "Charges my phone from empty to full twice over. Compact size fits easily in my jacket pocket."
+  },
+  {
+    "id": 23,
+    "product": "VoltCharge Power Bank",
+    "customer_name": "Sofia P.",
+    "rating": 1,
+    "date": "2026-01-18",
+    "review_text": "Stopped holding a charge after about six weeks. Feels like a fire hazard honestly, it got noticeably warm just sitting idle."
+  },
+  {
+    "id": 24,
+    "product": "VoltCharge Power Bank",
+    "customer_name": "Ahmed R.",
+    "rating": 4,
+    "date": "2026-01-19",
+    "review_text": "Charges fast and the LED indicator is handy. A bit bulky but worth it for the capacity."
+  },
+  {
+    "id": 25,
+    "product": "Lumina Desk Lamp",
+    "customer_name": "Chloe V.",
+    "rating": 5,
+    "date": "2026-01-20",
+    "review_text": "Adjustable brightness and color temperature are perfect for late night reading without straining my eyes."
+  },
+  {
+    "id": 26,
+    "product": "Lumina Desk Lamp",
+    "customer_name": "Dmitri K.",
+    "rating": 2,
+    "date": "2026-01-20",
+    "review_text": "Touch controls are unresponsive half the time, have to tap three or four times before it registers."
+  },
+  {
+    "id": 27,
+    "product": "Lumina Desk Lamp",
+    "customer_name": "Nia J.",
+    "rating": 4,
+    "date": "2026-01-21",
+    "review_text": "Sleek design, fits my desk setup nicely. Only wish the base was a bit heavier so it doesn't tip as easily."
+  },
+  {
+    "id": 28,
+    "product": "AquaFlow Water Filter Pitcher",
+    "customer_name": "Ryan C.",
+    "rating": 5,
+    "date": "2026-01-22",
+    "review_text": "Noticeable difference in taste from tap water, filter change reminder light is a great feature."
+  },
+  {
+    "id": 29,
+    "product": "AquaFlow Water Filter Pitcher",
+    "customer_name": "Meera V.",
+    "rating": 1,
+    "date": "2026-01-22",
+    "review_text": "Lid cracked within the first two weeks of normal use and now it leaks all over the fridge shelf. Poor plastic quality."
+  },
+  {
+    "id": 30,
+    "product": "AquaFlow Water Filter Pitcher",
+    "customer_name": "Elias B.",
+    "rating": 3,
+    "date": "2026-01-23",
+    "review_text": "Filters well but the flow rate is painfully slow, takes forever to fill a full pitcher."
+  },
+  {
+    "id": 31,
+    "product": "Aurora Wireless Earbuds",
+    "customer_name": "Katarina S.",
+    "rating": 1,
+    "date": "2026-01-24",
+    "review_text": "Second pair I've received and both had static in the left ear. Something is wrong with the quality control on this batch."
+  },
+  {
+    "id": 32,
+    "product": "NovaFit Smart Watch",
+    "customer_name": "Victor N.",
+    "rating": 5,
+    "date": "2026-01-24",
+    "review_text": "GPS lock is fast for running outdoors and the battery estimate has been spot on. Really happy with this upgrade from my old tracker."
+  },
+  {
+    "id": 33,
+    "product": "GreenLeaf Standing Desk",
+    "customer_name": "Isabella G.",
+    "rating": 1,
+    "date": "2026-01-25",
+    "review_text": "Motor started grinding and stalling halfway up after only three weeks. Support offered a replacement part but no refund option."
+  },
+  {
+    "id": 34,
+    "product": "TrailBlaze Hiking Backpack",
+    "customer_name": "Kenji M.",
+    "rating": 5,
+    "date": "2026-01-25",
+    "review_text": "Hip belt padding is excellent for long carries, no chafing even after 8 hours on the trail."
+  },
+  {
+    "id": 35,
+    "product": "VoltCharge Power Bank",
+    "customer_name": "Amara O.",
+    "rating": 2,
+    "date": "2026-01-26",
+    "review_text": "Advertised as fast charging but my phone charges slower with this than with the wall adapter it came with."
+  }
+]

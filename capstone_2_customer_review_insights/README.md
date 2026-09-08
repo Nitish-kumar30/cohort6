@@ -7,8 +7,9 @@ Automated pipeline that ingests customer reviews, summarizes them, runs sentimen
 analysis, logs results for trend monitoring, and alerts on negative reviews.
 
 ## Dataset
-AI-generated customer reviews (to be generated as part of this project — no external
-download needed).
+AI-generated customer reviews — see `data/reviews.json` (35 reviews across 10
+fictional products, mix of positive/negative/neutral, includes rating, date,
+product, and review text).
 
 ## Deliverables
 1. Custom pipeline (Python, replacing the originally suggested n8n workflow) that
