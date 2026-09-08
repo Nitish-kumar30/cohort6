@@ -1,0 +1,170 @@
+[
+  {
+    "id": "CAND-001",
+    "name": "Aditi Rao",
+    "role_id": "ROLE-BE",
+    "applied_date": "2026-01-03",
+    "resume_text": "5 years building backend services in Python and Go. Deep experience with AWS (EC2, Lambda, RDS), Kubernetes for container orchestration, and PostgreSQL for transactional workloads. Designed distributed systems handling 10M+ daily requests. Familiar with Kafka for event streaming and Terraform for infrastructure as code."
+  },
+  {
+    "id": "CAND-002",
+    "name": "Ben Foster",
+    "role_id": "ROLE-BE",
+    "applied_date": "2026-01-04",
+    "resume_text": "Backend developer with 2 years of experience mostly in PHP and MySQL. Built a few REST APIs and did some basic AWS EC2 deployment. No experience with Kubernetes, PostgreSQL, or distributed systems design."
+  },
+  {
+    "id": "CAND-003",
+    "name": "Carmen Diaz",
+    "role_id": "ROLE-BE",
+    "applied_date": "2026-01-07",
+    "resume_text": "Software engineer with 4 years in Python, strong API design skills, and hands-on AWS experience (S3, Lambda, API Gateway). Used PostgreSQL extensively for data modeling. Learning Kubernetes but haven't run it in production yet."
+  },
+  {
+    "id": "CAND-004",
+    "name": "Derek Osei",
+    "role_id": "ROLE-BE",
+    "applied_date": "2026-01-10",
+    "resume_text": "Senior backend engineer, 7 years experience. Led design of distributed systems on AWS and Kubernetes, expert in PostgreSQL and API design in Python and Go. Implemented Kafka-based event pipelines and manage infrastructure with Terraform."
+  },
+  {
+    "id": "CAND-005",
+    "name": "Elif Kaya",
+    "role_id": "ROLE-BE",
+    "applied_date": "2026-01-14",
+    "resume_text": "3 years as a full-stack developer, primarily frontend React work with some Node.js backend APIs. Basic familiarity with AWS S3 for file storage. No PostgreSQL, Kubernetes, or distributed systems experience."
+  },
+  {
+    "id": "CAND-006",
+    "name": "Farid Hossain",
+    "role_id": "ROLE-BE",
+    "applied_date": "2026-01-18",
+    "resume_text": "Backend engineer with 5 years in Python and API design, running services on Kubernetes and AWS. Comfortable with PostgreSQL and have contributed to a distributed systems rewrite of our order processing pipeline."
+  },
+  {
+    "id": "CAND-007",
+    "name": "Grace Lindqvist",
+    "role_id": "ROLE-FE",
+    "applied_date": "2026-01-03",
+    "resume_text": "Frontend engineer with 4 years of React and TypeScript experience. Strong CSS skills, built an internal design system, and championed accessibility audits across the product. Experience testing with Jest and React Testing Library."
+  },
+  {
+    "id": "CAND-008",
+    "name": "Hiro Tanaka",
+    "role_id": "ROLE-FE",
+    "applied_date": "2026-01-05",
+    "resume_text": "2 years experience with jQuery and vanilla JavaScript for marketing sites. Some exposure to React but no TypeScript. Limited accessibility or testing experience."
+  },
+  {
+    "id": "CAND-009",
+    "name": "Isabel Duarte",
+    "role_id": "ROLE-FE",
+    "applied_date": "2026-01-09",
+    "resume_text": "Frontend developer, 3 years with React and TypeScript, comfortable writing CSS and unit tests. Working on improving accessibility knowledge, have completed one WCAG training course. Familiar with Next.js."
+  },
+  {
+    "id": "CAND-010",
+    "name": "Jamal Whitfield",
+    "role_id": "ROLE-FE",
+    "applied_date": "2026-01-12",
+    "resume_text": "Senior frontend engineer with 6 years building accessible interfaces in React and TypeScript. Deep CSS expertise, maintains a component design system, writes comprehensive tests, and has used GraphQL and Next.js extensively."
+  },
+  {
+    "id": "CAND-011",
+    "name": "Katya Ivanova",
+    "role_id": "ROLE-FE",
+    "applied_date": "2026-01-16",
+    "resume_text": "Backend-leaning engineer, 3 years in Java and Spring Boot. Recently started learning React but have not shipped TypeScript or CSS work professionally, and no accessibility experience."
+  },
+  {
+    "id": "CAND-012",
+    "name": "Liam O'Sullivan",
+    "role_id": "ROLE-FE",
+    "applied_date": "2026-01-20",
+    "resume_text": "Frontend engineer with 5 years of React, TypeScript, and CSS experience. Led accessibility remediation project and set up automated testing coverage. Also worked with GraphQL and design systems."
+  },
+  {
+    "id": "CAND-013",
+    "name": "Meera Pillai",
+    "role_id": "ROLE-DA",
+    "applied_date": "2026-01-04",
+    "resume_text": "Data analyst with 4 years of SQL and Python experience, built dashboards in Looker, ran A/B tests for product experiments, and regularly present findings to non-technical stakeholders with clear communication."
+  },
+  {
+    "id": "CAND-014",
+    "name": "Noah Bergstrom",
+    "role_id": "ROLE-DA",
+    "applied_date": "2026-01-06",
+    "resume_text": "Recent graduate with coursework in statistics and some SQL practice. No professional dashboarding or Python experience yet, limited communication experience with business stakeholders."
+  },
+  {
+    "id": "CAND-015",
+    "name": "Olamide Adeyemi",
+    "role_id": "ROLE-DA",
+    "applied_date": "2026-01-11",
+    "resume_text": "3 years as a data analyst writing SQL queries daily and Python scripts for data cleaning. Built dashboards using an internal BI tool similar to Looker. Comfortable presenting statistics-based insights to leadership."
+  },
+  {
+    "id": "CAND-016",
+    "name": "Priya Chandran",
+    "role_id": "ROLE-DA",
+    "applied_date": "2026-01-15",
+    "resume_text": "Senior data analyst, 6 years, expert in SQL, Python, and statistics. Built the company's core Looker dashboards, ran dozens of A/B tests, and uses dbt for data transformation. Strong communicator across engineering and business teams."
+  },
+  {
+    "id": "CAND-017",
+    "name": "Quentin Marsh",
+    "role_id": "ROLE-DA",
+    "applied_date": "2026-01-19",
+    "resume_text": "Marketing coordinator with basic Excel skills. No SQL, Python, dashboarding, or formal statistics background."
+  },
+  {
+    "id": "CAND-018",
+    "name": "Rosa Fernandez",
+    "role_id": "ROLE-DA",
+    "applied_date": "2026-01-22",
+    "resume_text": "Data analyst with 2 years of SQL and dashboarding experience, learning Python currently. Decent grasp of statistics from a bootcamp and has presented findings in team meetings."
+  },
+  {
+    "id": "CAND-019",
+    "name": "Samuel Okoro",
+    "role_id": "ROLE-PMM",
+    "applied_date": "2026-01-05",
+    "resume_text": "Product marketing manager with 6 years leading go-to-market for B2B SaaS launches. Strong positioning and content strategy skills, partners cross-functionally with product and sales, and uses analytics dashboards to track launch performance."
+  },
+  {
+    "id": "CAND-020",
+    "name": "Tara Nilsson",
+    "role_id": "ROLE-PMM",
+    "applied_date": "2026-01-08",
+    "resume_text": "Content writer with 2 years of blog and social media experience. No formal go-to-market, positioning, or analytics background, limited cross-functional project experience."
+  },
+  {
+    "id": "CAND-021",
+    "name": "Umar Farouk",
+    "role_id": "ROLE-PMM",
+    "applied_date": "2026-01-13",
+    "resume_text": "4 years in product marketing, led positioning for two major product launches and built go-to-market plans with sales enablement materials. Comfortable with analytics and some SQL for reporting. Strong cross-functional collaboration with engineering."
+  },
+  {
+    "id": "CAND-022",
+    "name": "Valentina Costa",
+    "role_id": "ROLE-PMM",
+    "applied_date": "2026-01-17",
+    "resume_text": "Senior product marketer, 8 years, expert in positioning, go-to-market strategy, and content strategy. Runs competitive research programs, partners closely with product and sales cross-functionally, and reports on launch analytics using SQL."
+  },
+  {
+    "id": "CAND-023",
+    "name": "William Chen",
+    "role_id": "ROLE-PMM",
+    "applied_date": "2026-01-21",
+    "resume_text": "Sales development rep with 1 year of experience. No product marketing, positioning, go-to-market, or content strategy background."
+  },
+  {
+    "id": "CAND-024",
+    "name": "Ximena Torres",
+    "role_id": "ROLE-PMM",
+    "applied_date": "2026-01-24",
+    "resume_text": "Product marketing manager with 3 years of experience in positioning and content strategy for two product launches, decent cross-functional collaboration with sales, still building go-to-market and analytics depth."
+  }
+]

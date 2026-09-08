@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ROLE-BE",
+    "title": "Backend Engineer",
+    "department": "Engineering",
+    "seniority": "Mid-Senior",
+    "must_have_skills": ["python", "aws", "kubernetes", "postgresql", "api design", "distributed systems"],
+    "nice_to_have_skills": ["go", "kafka", "terraform"],
+    "description": "We are hiring a Backend Engineer to build and scale APIs for our cloud platform. You'll work with Python, AWS, Kubernetes, and PostgreSQL, and help design distributed systems that handle millions of requests per day. Experience with Go, Kafka, or Terraform is a plus."
+  },
+  {
+    "id": "ROLE-FE",
+    "title": "Frontend Engineer",
+    "department": "Engineering",
+    "seniority": "Mid",
+    "must_have_skills": ["react", "typescript", "css", "accessibility", "testing"],
+    "nice_to_have_skills": ["next.js", "graphql", "design systems"],
+    "description": "We are hiring a Frontend Engineer to build accessible, well-tested user interfaces with React and TypeScript. Strong CSS skills and a commitment to accessibility are required. Experience with Next.js, GraphQL, or design systems is a plus."
+  },
+  {
+    "id": "ROLE-DA",
+    "title": "Data Analyst",
+    "department": "Data",
+    "seniority": "Mid",
+    "must_have_skills": ["sql", "python", "dashboarding", "statistics", "communication"],
+    "nice_to_have_skills": ["looker", "dbt", "a/b testing"],
+    "description": "We are hiring a Data Analyst to turn raw data into decisions. You'll write SQL and Python to analyze data, build dashboards, and clearly communicate findings to stakeholders. Experience with Looker, dbt, or A/B testing is a plus."
+  },
+  {
+    "id": "ROLE-PMM",
+    "title": "Product Marketing Manager",
+    "department": "Marketing",
+    "seniority": "Senior",
+    "must_have_skills": ["positioning", "go-to-market", "content strategy", "cross-functional collaboration", "analytics"],
+    "nice_to_have_skills": ["sql", "competitive research", "sales enablement"],
+    "description": "We are hiring a Product Marketing Manager to own positioning and go-to-market for our product launches. You'll partner cross-functionally with product and sales, write content, and use analytics to measure impact. Experience with SQL, competitive research, or sales enablement is a plus."
+  }
+]
