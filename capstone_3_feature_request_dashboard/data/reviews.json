@@ -1,0 +1,86 @@
+[
+  {
+    "id": "REV-201",
+    "source": "review",
+    "date": "2026-01-04",
+    "user": "Grace L.",
+    "text": "TaskFlow has been solid for our team but I keep wishing for a Slack integration so updates don't get lost in yet another inbox."
+  },
+  {
+    "id": "REV-202",
+    "source": "review",
+    "date": "2026-01-07",
+    "user": "Ivan D.",
+    "text": "Great tool overall, 5 stars. The reporting could be more flexible though, we can't export the exact breakdown our clients ask for."
+  },
+  {
+    "id": "REV-203",
+    "source": "review",
+    "date": "2026-01-10",
+    "user": "Aisha M.",
+    "text": "Mobile app experience on Android is rough, laggy and occasionally crashes when uploading attachments. iOS version is much better."
+  },
+  {
+    "id": "REV-204",
+    "source": "review",
+    "date": "2026-01-12",
+    "user": "Ben S.",
+    "text": "Switched from a competitor mainly for the clean UI. Only complaint is there's no dark mode yet, which strains my eyes at night."
+  },
+  {
+    "id": "REV-205",
+    "source": "review",
+    "date": "2026-01-14",
+    "user": "Yuki T.",
+    "text": "Billing has been a headache, got double charged once and the invoice history page doesn't clearly show plan changes."
+  },
+  {
+    "id": "REV-206",
+    "source": "review",
+    "date": "2026-01-16",
+    "user": "Zainab Q.",
+    "text": "Would be amazing to have a Zapier connector, we automate everything else in our stack and TaskFlow is the missing piece."
+  },
+  {
+    "id": "REV-207",
+    "source": "review",
+    "date": "2026-01-18",
+    "user": "Leo F.",
+    "text": "Onboarding new hires takes way too long because there's no interactive tutorial, just a static help page."
+  },
+  {
+    "id": "REV-208",
+    "source": "review",
+    "date": "2026-01-20",
+    "user": "Sofia P.",
+    "text": "Love the product overall. Push notifications on mobile would make it perfect, currently I miss assignments unless I open the app."
+  },
+  {
+    "id": "REV-209",
+    "source": "review",
+    "date": "2026-01-22",
+    "user": "Ahmed R.",
+    "text": "Security-wise I'd like to see 2FA support, we handle sensitive client data and our compliance team keeps asking about it."
+  },
+  {
+    "id": "REV-210",
+    "source": "review",
+    "date": "2026-01-24",
+    "user": "Chloe V.",
+    "text": "Excellent task management core features. A Google Calendar sync would remove a lot of manual double-entry for our team."
+  },
+  {
+    "id": "REV-211",
+    "source": "review",
+    "date": "2026-01-26",
+    "user": "Dmitri K.",
+    "text": "Reports are too rigid, we can only see last 7 or 30 days. Quarterly and custom range reporting would help a lot for our reviews."
+  },
+  {
+    "id": "REV-212",
+    "source": "review",
+    "date": "2026-01-28",
+    "user": "Nia J.",
+    "text": "Android app performance really needs work, it's noticeably slower than the iOS app and the web version."
+  }
+]
