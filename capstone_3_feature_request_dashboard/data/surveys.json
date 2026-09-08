@@ -1,0 +1,72 @@
+[
+  {
+    "id": "SUR-301",
+    "source": "survey",
+    "date": "2026-01-05",
+    "user": "respondent_014",
+    "text": "What feature would improve your workflow most? A Slack or Teams integration for status updates, we're tired of manual notifications."
+  },
+  {
+    "id": "SUR-302",
+    "source": "survey",
+    "date": "2026-01-05",
+    "user": "respondent_027",
+    "text": "The reporting/export tools feel basic compared to competitors. Custom date ranges and per-team breakdowns would be a big win."
+  },
+  {
+    "id": "SUR-303",
+    "source": "survey",
+    "date": "2026-01-12",
+    "user": "respondent_033",
+    "text": "Onboarding was confusing for my team, an interactive walkthrough for new users would reduce our ramp-up time significantly."
+  },
+  {
+    "id": "SUR-304",
+    "source": "survey",
+    "date": "2026-01-12",
+    "user": "respondent_041",
+    "text": "Security is our top concern, two-factor authentication is table stakes for tools handling our project data."
+  },
+  {
+    "id": "SUR-305",
+    "source": "survey",
+    "date": "2026-01-19",
+    "user": "respondent_052",
+    "text": "Mobile experience needs improvement, especially on Android where the app feels sluggish and drains battery faster than expected."
+  },
+  {
+    "id": "SUR-306",
+    "source": "survey",
+    "date": "2026-01-19",
+    "user": "respondent_058",
+    "text": "Would love push notifications for task assignments and due-date reminders on mobile, currently very easy to miss things."
+  },
+  {
+    "id": "SUR-307",
+    "source": "survey",
+    "date": "2026-01-26",
+    "user": "respondent_066",
+    "text": "Integrations are our biggest gap, specifically Zapier and Google Calendar sync would save our ops team hours every week."
+  },
+  {
+    "id": "SUR-308",
+    "source": "survey",
+    "date": "2026-01-26",
+    "user": "respondent_071",
+    "text": "Billing transparency could improve, it wasn't clear what we'd be charged after upgrading and support was slow to clarify."
+  },
+  {
+    "id": "SUR-309",
+    "source": "survey",
+    "date": "2026-01-27",
+    "user": "respondent_079",
+    "text": "Overall very happy with TaskFlow's core task management, no major complaints from our team this quarter."
+  },
+  {
+    "id": "SUR-310",
+    "source": "survey",
+    "date": "2026-01-28",
+    "user": "respondent_084",
+    "text": "A native Teams integration is the one thing blocking wider adoption at our company since leadership mandated Teams last year."
+  }
+]

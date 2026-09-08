@@ -1,0 +1,107 @@
+[
+  {
+    "id": "TCK-101",
+    "source": "support_ticket",
+    "date": "2026-01-05",
+    "user": "priya@northwind.io",
+    "text": "We really need a way to connect TaskFlow to Slack so status changes post automatically to our team channel. Right now we're copy-pasting updates manually every day."
+  },
+  {
+    "id": "TCK-102",
+    "source": "support_ticket",
+    "date": "2026-01-06",
+    "user": "mark@buildright.co",
+    "text": "The mobile app crashes every time I try to attach a photo to a task. This is blocking our field crew from logging site issues, please fix ASAP."
+  },
+  {
+    "id": "TCK-103",
+    "source": "support_ticket",
+    "date": "2026-01-08",
+    "user": "linh@delta-labs.com",
+    "text": "Could you add two-factor authentication? Our security team flagged this as a requirement to keep using TaskFlow for client work."
+  },
+  {
+    "id": "TCK-104",
+    "source": "support_ticket",
+    "date": "2026-01-09",
+    "user": "carlos@retailhub.com",
+    "text": "Reporting is really limited right now. We need custom date-range exports and the ability to break down completed tasks by team member."
+  },
+  {
+    "id": "TCK-105",
+    "source": "support_ticket",
+    "date": "2026-01-11",
+    "user": "emma@fintechnow.com",
+    "text": "Billing page shows the wrong plan tier after we upgraded last week. Support has not gotten back to me in 4 days, this is affecting our invoicing."
+  },
+  {
+    "id": "TCK-106",
+    "source": "support_ticket",
+    "date": "2026-01-13",
+    "user": "sam@greenacres.org",
+    "text": "Please add a Zapier integration, or at minimum webhooks, so we can push task completions into our internal CRM."
+  },
+  {
+    "id": "TCK-107",
+    "source": "support_ticket",
+    "date": "2026-01-14",
+    "user": "deepak@quantstack.ai",
+    "text": "New team members find the onboarding confusing, there's no guided tour and the docs are out of date for the current UI."
+  },
+  {
+    "id": "TCK-108",
+    "source": "support_ticket",
+    "date": "2026-01-15",
+    "user": "rachel@urbanfit.com",
+    "text": "The Android app is noticeably slower than iOS, task lists take 5+ seconds to load. Our field team is getting frustrated."
+  },
+  {
+    "id": "TCK-109",
+    "source": "support_ticket",
+    "date": "2026-01-17",
+    "user": "tomas@datawaveinc.com",
+    "text": "We got charged twice for the same billing cycle. Need a refund and clarity on why this happened, quite urgent for our finance team."
+  },
+  {
+    "id": "TCK-110",
+    "source": "support_ticket",
+    "date": "2026-01-19",
+    "user": "hannah@craftco.com",
+    "text": "It would help a lot to have push notifications on mobile when someone assigns me a task, right now I only find out by checking manually."
+  },
+  {
+    "id": "TCK-111",
+    "source": "support_ticket",
+    "date": "2026-01-21",
+    "user": "omar@skylinebuild.com",
+    "text": "Can we get a native integration with Google Calendar so task due dates show up automatically? Would save a lot of manual entry."
+  },
+  {
+    "id": "TCK-112",
+    "source": "support_ticket",
+    "date": "2026-01-23",
+    "user": "julia@brightpath.edu",
+    "text": "Our account was locked after a password reset attempt and support took over 24 hours to restore access. This felt like a serious security gap."
+  },
+  {
+    "id": "TCK-113",
+    "source": "support_ticket",
+    "date": "2026-01-25",
+    "user": "wei@pacificsupply.com",
+    "text": "The dashboard charts don't let us filter by custom date ranges, only last 7/30 days. We need quarterly reporting for leadership."
+  },
+  {
+    "id": "TCK-114",
+    "source": "support_ticket",
+    "date": "2026-01-27",
+    "user": "fatima@novahealth.org",
+    "text": "Mobile app keeps logging me out every morning, have to re-enter my password daily. Very disruptive for our on-call nurses."
+  },
+  {
+    "id": "TCK-115",
+    "source": "support_ticket",
+    "date": "2026-01-29",
+    "user": "noah@lakeside-realty.com",
+    "text": "Would love a Microsoft Teams integration similar to the Slack one, since our whole org is on Teams not Slack."
+  }
+]
